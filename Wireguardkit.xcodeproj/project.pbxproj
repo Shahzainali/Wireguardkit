@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB9914392BAE6DB100440495 /* WireGuardKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB9914382BAE6DB100440495 /* WireGuardKit */; };
+		CB99143C2BAE707300440495 /* TunnelConfiguration+WqQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB99143A2BAE707300440495 /* TunnelConfiguration+WqQuickConfig.swift */; };
+		CB99143D2BAE707300440495 /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB99143B2BAE707300440495 /* String+ArrayConversion.swift */; };
+		CBB2513B2BAE5FE00081C940 /* WireguardkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2513A2BAE5FE00081C940 /* WireguardkitApp.swift */; };
+		CBB2513D2BAE5FE00081C940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB2513C2BAE5FE00081C940 /* ContentView.swift */; };
+		CBB2513F2BAE5FE30081C940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB2513E2BAE5FE30081C940 /* Assets.xcassets */; };
+		CBB251422BAE5FE30081C940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB251412BAE5FE30081C940 /* Preview Assets.xcassets */; };
+		CBB251762BAE660E0081C940 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB2514F2BAE64E30081C940 /* NetworkExtension.framework */; };
+		CBB251792BAE660E0081C940 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB251782BAE660E0081C940 /* PacketTunnelProvider.swift */; };
+		CBB2517E2BAE660E0081C940 /* network-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CBB251752BAE660E0081C940 /* network-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB9914312BAE68BA00440495 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB2512F2BAE5FDF0081C940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB99142D2BAE67ED00440495;
+			remoteInfo = WireguardGoBridge;
+		};
+		CBB2517C2BAE660E0081C940 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB2512F2BAE5FDF0081C940 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB251742BAE660E0081C940;
+			remoteInfo = "network-extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBB2515C2BAE64E30081C940 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBB2517E2BAE660E0081C940 /* network-extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB99143A2BAE707300440495 /* TunnelConfiguration+WqQuickConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WqQuickConfig.swift"; sourceTree = "<group>"; };
+		CB99143B2BAE707300440495 /* String+ArrayConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ArrayConversion.swift"; sourceTree = "<group>"; };
+		CBB251372BAE5FE00081C940 /* Wireguardkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wireguardkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB2513A2BAE5FE00081C940 /* WireguardkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireguardkitApp.swift; sourceTree = "<group>"; };
+		CBB2513C2BAE5FE00081C940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CBB2513E2BAE5FE30081C940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBB251412BAE5FE30081C940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBB251482BAE60B20081C940 /* Wireguardkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wireguardkit.entitlements; sourceTree = "<group>"; };
+		CBB2514F2BAE64E30081C940 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		CBB251752BAE660E0081C940 /* network-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "network-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB251782BAE660E0081C940 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		CBB2517A2BAE660E0081C940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB2517B2BAE660E0081C940 /* network_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = network_extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBB251342BAE5FE00081C940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB251722BAE660E0081C940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9914392BAE6DB100440495 /* WireGuardKit in Frameworks */,
+				CBB251762BAE660E0081C940 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBB2512E2BAE5FDF0081C940 = {
+			isa = PBXGroup;
+			children = (
+				CBB251392BAE5FE00081C940 /* Wireguardkit */,
+				CBB251772BAE660E0081C940 /* network-extension */,
+				CBB2514E2BAE64E30081C940 /* Frameworks */,
+				CBB251382BAE5FE00081C940 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBB251382BAE5FE00081C940 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB251372BAE5FE00081C940 /* Wireguardkit.app */,
+				CBB251752BAE660E0081C940 /* network-extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBB251392BAE5FE00081C940 /* Wireguardkit */ = {
+			isa = PBXGroup;
+			children = (
+				CBB251482BAE60B20081C940 /* Wireguardkit.entitlements */,
+				CBB2513A2BAE5FE00081C940 /* WireguardkitApp.swift */,
+				CBB2513C2BAE5FE00081C940 /* ContentView.swift */,
+				CBB2513E2BAE5FE30081C940 /* Assets.xcassets */,
+				CBB251402BAE5FE30081C940 /* Preview Content */,
+			);
+			path = Wireguardkit;
+			sourceTree = "<group>";
+		};
+		CBB251402BAE5FE30081C940 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CBB251412BAE5FE30081C940 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBB2514E2BAE64E30081C940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBB2514F2BAE64E30081C940 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB251772BAE660E0081C940 /* network-extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBB251782BAE660E0081C940 /* PacketTunnelProvider.swift */,
+				CB99143B2BAE707300440495 /* String+ArrayConversion.swift */,
+				CB99143A2BAE707300440495 /* TunnelConfiguration+WqQuickConfig.swift */,
+				CBB2517A2BAE660E0081C940 /* Info.plist */,
+				CBB2517B2BAE660E0081C940 /* network_extension.entitlements */,
+			);
+			path = "network-extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		CB99142D2BAE67ED00440495 /* WireguardGoBridge */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "";
+			buildConfigurationList = CB9914302BAE67EE00440495 /* Build configuration list for PBXLegacyTarget "WireguardGoBridge" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(PROJECT_DIR)/script/build_wireguard_go_bridge.sh";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = WireguardGoBridge;
+			passBuildSettingsInEnvironment = 1;
+			productName = WireguardGoBridge;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		CBB251362BAE5FE00081C940 /* Wireguardkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB251452BAE5FE30081C940 /* Build configuration list for PBXNativeTarget "Wireguardkit" */;
+			buildPhases = (
+				CBB251332BAE5FE00081C940 /* Sources */,
+				CBB251342BAE5FE00081C940 /* Frameworks */,
+				CBB251352BAE5FE00081C940 /* Resources */,
+				CBB2515C2BAE64E30081C940 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB2517D2BAE660E0081C940 /* PBXTargetDependency */,
+			);
+			name = Wireguardkit;
+			productName = Wireguardkit;
+			productReference = CBB251372BAE5FE00081C940 /* Wireguardkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBB251742BAE660E0081C940 /* network-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB2517F2BAE660E0081C940 /* Build configuration list for PBXNativeTarget "network-extension" */;
+			buildPhases = (
+				CBB251712BAE660E0081C940 /* Sources */,
+				CBB251722BAE660E0081C940 /* Frameworks */,
+				CBB251732BAE660E0081C940 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9914322BAE68BA00440495 /* PBXTargetDependency */,
+			);
+			name = "network-extension";
+			packageProductDependencies = (
+				CB9914382BAE6DB100440495 /* WireGuardKit */,
+			);
+			productName = "network-extension";
+			productReference = CBB251752BAE660E0081C940 /* network-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBB2512F2BAE5FDF0081C940 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CB99142D2BAE67ED00440495 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CBB251362BAE5FE00081C940 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					CBB251742BAE660E0081C940 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CBB251322BAE5FDF0081C940 /* Build configuration list for PBXProject "Wireguardkit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBB2512E2BAE5FDF0081C940;
+			packageReferences = (
+				CB9914372BAE6DB100440495 /* XCRemoteSwiftPackageReference "wireguard-apple" */,
+			);
+			productRefGroup = CBB251382BAE5FE00081C940 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB251362BAE5FE00081C940 /* Wireguardkit */,
+				CBB251742BAE660E0081C940 /* network-extension */,
+				CB99142D2BAE67ED00440495 /* WireguardGoBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBB251352BAE5FE00081C940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB251422BAE5FE30081C940 /* Preview Assets.xcassets in Resources */,
+				CBB2513F2BAE5FE30081C940 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB251732BAE660E0081C940 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBB251332BAE5FE00081C940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB2513D2BAE5FE00081C940 /* ContentView.swift in Sources */,
+				CBB2513B2BAE5FE00081C940 /* WireguardkitApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB251712BAE660E0081C940 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB99143C2BAE707300440495 /* TunnelConfiguration+WqQuickConfig.swift in Sources */,
+				CBB251792BAE660E0081C940 /* PacketTunnelProvider.swift in Sources */,
+				CB99143D2BAE707300440495 /* String+ArrayConversion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB9914322BAE68BA00440495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB99142D2BAE67ED00440495 /* WireguardGoBridge */;
+			targetProxy = CB9914312BAE68BA00440495 /* PBXContainerItemProxy */;
+		};
+		CBB2517D2BAE660E0081C940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB251742BAE660E0081C940 /* network-extension */;
+			targetProxy = CBB2517C2BAE660E0081C940 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB99142E2BAE67ED00440495 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X7UJ388FXK;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB99142F2BAE67ED00440495 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X7UJ388FXK;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBB251432BAE5FE30081C940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBB251442BAE5FE30081C940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB251462BAE5FE30081C940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wireguardkit/Wireguardkit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wireguardkit/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wireguardkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBB251472BAE5FE30081C940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wireguardkit/Wireguardkit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wireguardkit/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wireguardkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBB251802BAE660E0081C940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "network-extension/network_extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "network-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "network-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wireguardkit.network-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBB251812BAE660E0081C940 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "network-extension/network_extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "network-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "network-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wireguardkit.network-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB9914302BAE67EE00440495 /* Build configuration list for PBXLegacyTarget "WireguardGoBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB99142E2BAE67ED00440495 /* Debug */,
+				CB99142F2BAE67ED00440495 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB251322BAE5FDF0081C940 /* Build configuration list for PBXProject "Wireguardkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB251432BAE5FE30081C940 /* Debug */,
+				CBB251442BAE5FE30081C940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB251452BAE5FE30081C940 /* Build configuration list for PBXNativeTarget "Wireguardkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB251462BAE5FE30081C940 /* Debug */,
+				CBB251472BAE5FE30081C940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB2517F2BAE660E0081C940 /* Build configuration list for PBXNativeTarget "network-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB251802BAE660E0081C940 /* Debug */,
+				CBB251812BAE660E0081C940 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB9914372BAE6DB100440495 /* XCRemoteSwiftPackageReference "wireguard-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.zx2c4.com/wireguard-apple";
+			requirement = {
+				kind = exactVersion;
+				version = "1.0.15-26";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB9914382BAE6DB100440495 /* WireGuardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9914372BAE6DB100440495 /* XCRemoteSwiftPackageReference "wireguard-apple" */;
+			productName = WireGuardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CBB2512F2BAE5FDF0081C940 /* Project object */;
+}

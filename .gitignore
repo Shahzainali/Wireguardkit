@@ -1,0 +1,96 @@
+# Xcode
+##
+.DS_Store
+*.swp
+*.lock
+profile
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+IDEWorkspaceChecks.plist
+*.xcscmblueprint
+
+# CocoaPods
+##
+Pods/
+
+# Carthage
+##
+Carthage/Build
+
+# Fastlane
+##
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Swift Package Manager
+##
+.build/
+.swiftpm/xcode/package.xcworkspace
+.swiftpm/xcode/xcuserdata/
+
+# Build products
+##
+build/
+Build/
+*.o
+*.d
+
+# Various settings
+##
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Watch app files
+##
+*.watchapp
+*.watchkitextension
+
+# Profile
+##
+*.mobileprovision
+*.provisionprofile
+
+# Certificate
+##
+*.p12
+
+# Other files and folders
+##
+*.bak
+*.tmp
+*.swp
+*~
+*.svn
+*.git
+*.hg
+*.bzr
+
+# User-specific files
+##
+*.moved-aside
+*.xcuserstate
+
+# Sensitive files containing API keys, credentials, etc.
+##
+*.plist
+
+# OS generated files
+##
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
