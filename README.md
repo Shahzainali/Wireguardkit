@@ -44,7 +44,7 @@ In your Network Extension target, add `TunnelConfiguration+wgQuickConfig` and `S
 
 ## Acknowledgements
 
-The creation of this guide was inspired and informed by the following resources:
+Taken help from:
 
 - [Passepartout VPN's TunnelKit](https://github.com/passepartoutvpn/tunnelkit/blob/master/README.md)
 - [Using WireGuardKit](https://github.com/roop/using-wireguardkit/blob/master/CREATING.md)
