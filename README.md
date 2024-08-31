@@ -42,6 +42,9 @@ Start by creating a new project in Xcode if you haven't already done so.
 
 In your Network Extension target, add `TunnelConfiguration+wgQuickConfig` and `String+ArrayConversion` extensions. These will help in configuring the tunnel and handling array conversions, respectively.
 
+Dont forget to change identifier [here](https://github.com/Shahzainali/Wireguardkit/blob/e42f0fcf9b9f169575b48bfa9a2671db686676d6/Wireguardkit/WireguardkitApp.swift#L38)
+Also edit the wireguard config [here](https://github.com/Shahzainali/Wireguardkit/blob/e42f0fcf9b9f169575b48bfa9a2671db686676d6/Wireguardkit/WireguardkitApp.swift#L44)
+
 ## Acknowledgements
 
 Taken help from:
