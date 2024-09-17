@@ -56,6 +56,10 @@ Taken help from:
 
 Feel free to open any issue or contact me if you face any issue.
 
-- Email: [shahzainali93@gmail.com](mailto:shahzainali93@gmail.com)
+```sh
+| Email |           shahzainali93@gmail.com |
+| Linkedin |        https://www.linkedin.com/in/shahzainali/ |
+| stackoverflow |   https://stackoverflow.com/users/5154783/shahzain-ali |
+```
 
 I hope this guide facilitates a smoother integration process for you. Feedback and queries are always welcome.
