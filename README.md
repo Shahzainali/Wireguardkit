@@ -1,7 +1,6 @@
 # WireGuard Integration Guide
 
 This guide aims to simplify the process of integrating WireGuard into your iOS application.  I've tried to make this complex procedure easy.
-This project contains only integration, I will add connection part soon.
 
 ## Step 1: Create a New Project
 
