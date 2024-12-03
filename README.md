@@ -53,9 +53,7 @@ Taken help from:
 
 ## Contact
 
-Feel free to open any issue or contact me if you face any issue.
-
-Feel free to open any issue or contact me if you face any issue.
+Feel free to open any issue or contact me if you face any issues.
 
 | **Platform**   | **Link** |
 |----------------|------------------------------------------------|
