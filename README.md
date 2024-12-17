@@ -44,6 +44,8 @@ In your Network Extension target, add `TunnelConfiguration+wgQuickConfig` and `S
 Dont forget to change identifier [here](https://github.com/Shahzainali/Wireguardkit/blob/e42f0fcf9b9f169575b48bfa9a2671db686676d6/Wireguardkit/WireguardkitApp.swift#L38)
 Also edit the wireguard config [here](https://github.com/Shahzainali/Wireguardkit/blob/e42f0fcf9b9f169575b48bfa9a2671db686676d6/Wireguardkit/WireguardkitApp.swift#L44)
 
+# Also please note you will need real device for testing, Network extensions don't work on simulators.
+
 ## Acknowledgements
 
 Taken help from:
