@@ -53,6 +53,15 @@ Taken help from:
 - [Passepartout VPN's TunnelKit](https://github.com/passepartoutvpn/tunnelkit/blob/master/README.md)
 - [Using WireGuardKit](https://github.com/roop/using-wireguardkit/blob/master/CREATING.md)
 
+
+## ☕ Support My Work
+
+If you find this project helpful, consider supporting me:
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/shahzainali)
+
+Thank you for your support! 🙏
+
 ## Contact
 
 Feel free to open any issue or contact me if you face any issues.
