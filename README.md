@@ -63,7 +63,7 @@ Also edit the wireguard config [here](https://github.com/Shahzainali/Wireguardki
 ## Step 6: Same as above
 ## Step 7: Add prebuilt wireguard lib.
 
-1. In the Project Navigator, go to the NetworkExtension target → General → Frameworks, Libraries, and Embedded Content.
+1. In the Project Navigator, go to the NetworkExtension target → General → Frameworks & libraries.
 
 2. Add libwg-go.a (included in the repository).
 
