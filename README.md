@@ -2,6 +2,8 @@
 
 This guide aims to simplify the process of integrating WireGuard into your iOS application.  I've tried to make this complex procedure easy.
 
+# Xcode 15
+
 ## Step 1: Create a New Project
 
 Start by creating a new project in Xcode if you haven't already done so.
@@ -46,13 +48,26 @@ Also edit the wireguard config [here](https://github.com/Shahzainali/Wireguardki
 
 ### Also please note you will need real device for testing, Network extensions don't work on simulators.
 
-## Acknowledgements
+# Xcode 16
 
-Taken help from:
+## Step 1: Same as above
+## Step 2: Same as above
+## Step 3: Same as above
+## Step 4: Add WireGuardKit Dependency (unofficial source with fixed issue)
 
-- [Passepartout VPN's TunnelKit](https://github.com/passepartoutvpn/tunnelkit/blob/master/README.md)
-- [Using WireGuardKit](https://github.com/roop/using-wireguardkit/blob/master/CREATING.md)
+1. To your project, add the WireGuardKit dependency by navigating to **Project** > **Package Dependencies**, then click the **+** button.
+2. Enter the URL `https://github.com/groupofstars/wireguard-apple` and add.
+3. When prompted, select the `network-extension` target for the package.
 
+## Step 5: Same as above
+## Step 6: Same as above
+## Step 7: Add prebuilt wireguard lib.
+
+1. In the Project Navigator, go to the NetworkExtension target → General → Frameworks, Libraries, and Embedded Content.
+
+2. Add libwg-go.a (included in the repository).
+
+⚠️ This xcode 16 solution works perfectly for iOS, but will most likely not work for macOS, since libwg-go.a is a prebuilt WireGuard library specifically for iPhoneOS.
 
 ## ☕ Support My Work
 
@@ -61,6 +76,13 @@ If you find this project helpful, consider supporting me:
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/shahzainali)
 
 Thank you for your support! 🙏
+
+## Acknowledgements
+
+Taken help from:
+
+- [Passepartout VPN's TunnelKit](https://github.com/passepartoutvpn/tunnelkit/blob/master/README.md)
+- [Using WireGuardKit](https://github.com/roop/using-wireguardkit/blob/master/CREATING.md)
 
 ## Contact
 
