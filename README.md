@@ -56,7 +56,7 @@ Also edit the wireguard config [here](https://github.com/Shahzainali/Wireguardki
 ## Step 4: Add WireGuardKit Dependency (unofficial source with fixed issue)
 
 1. To your project, add the WireGuardKit dependency by navigating to **Project** > **Package Dependencies**, then click the **+** button.
-2. Enter the URL `https://github.com/groupofstars/wireguard-apple` and add.
+2. Enter the URL `https://github.com/ut360e/wireguard-apple.git` and add.
 3. When prompted, select the `network-extension` target for the package.
 
 ## Step 5: Same as above
