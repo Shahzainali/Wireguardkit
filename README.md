@@ -4,7 +4,7 @@ This guide aims to simplify the process of integrating WireGuard into your iOS a
 
 # Update
 
-### I tried Xcode 15 steps on Xcode 26, and it works perfectly, just match the Go version in the script file.
+### I tried Xcode 15 steps on Xcode 26, and it works perfectly, just match the Go version in the script file. Also, for wireguard I have used https://github.com/ut360e/wireguard-apple.git (the latest version with some fixes)
 
 # Xcode 15
 
