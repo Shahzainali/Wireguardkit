@@ -2,6 +2,10 @@
 
 This guide aims to simplify the process of integrating WireGuard into your iOS application.  I've tried to make this complex procedure easy.
 
+# Update
+
+### I tried Xcode 15 steps on Xcode 26, and it works perfectly, just match the Go version in the script file.
+
 # Xcode 15
 
 ## Step 1: Create a New Project
